@@ -1,4 +1,4 @@
-from input import input
+from input import user
 from output import display
 from domains.student import Student
 from domains.course import Course
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         display("8. Sort student list by GPA descending\n ")
         display("9. Exit\n")
 
-        option = int(input("Enter your option: "))
+        option = int(user("Enter your option: "))
 
         if option == 1:
             Student.add()  
@@ -36,7 +36,7 @@ if __name__ == '__main__':
             for mark in mark_system.marks:
                 mark.markInfo()
         elif option == 7:
-            student_id = input("Enter student ID: ")
+            student_id = user("Enter student ID: ")
             gpa = Student.calculateGPA(student_id)
             display(f'GPA of student {student_id}: {gpa: .2f}')
         elif option == 8:
