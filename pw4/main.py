@@ -1,4 +1,4 @@
-from input import user
+from input import input
 from output import display
 from domains.student import Student
 from domains.course import Course
