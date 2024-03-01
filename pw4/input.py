@@ -1,2 +1,2 @@
-def input(prompt):
+def user(prompt):
     return input(prompt)
